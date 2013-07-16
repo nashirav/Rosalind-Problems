@@ -3,6 +3,19 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.math.BigInteger;
 
+/*
+ *    (..)If F_n represents the number of rabbit pairs alive after the n-th month,
+ *    then we obtain the Fibonacci sequence having terms F_n that are defined
+ *    by the recurrence relation F_n=F_n−1+F_n−2 (with F1=F2=1 to initiate the
+ *    sequence). Although the sequence bears Fibonacci's name, it was known 
+ *    to Indian mathematicians over two millennia ago.(..)
+	
+	Given: Positive integers n≤40 and k≤5.
+	Return: The total number of rabbit pairs that will be present after n months
+	if each pair of reproduction-age rabbits produces a litter of k rabbit pairs
+	in each generation (instead of only 1 pair).
+*/
+
 
 public class fib {
   
