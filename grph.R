@@ -8,7 +8,7 @@ k <- 3
 seqs <- readFasta("./datasets/rosalind_grph.txt");
 
 seqs.l <- nchar(sapply(sread(seqs), toString))
-prefixes <- sapply(sread(ShortRead(sread=subseq(sread(seqs),start=1,end=3), id=id(seqs))), toString)
+prefixes <- sapply(sread(ShortRead(sread=subseq(sread(seqs),start=1,end=k), id=id(seqs))), toString)
 sufixes <- sapply(sread(ShortRead(sread=subseq(sread(seqs),start=seqs.l-k+1,end=seqs.l), id=id(seqs))), toString)
 
 seqs.names <- sapply(id(seqs), toString)
